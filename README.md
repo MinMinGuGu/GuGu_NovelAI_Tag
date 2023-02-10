@@ -1,6 +1,6 @@
 # GuGu_NovelAI_Tag
 
-Web项目，用于生成NovelAI的参数，并支持管理参数。
+Web项目，用于生成NovelAI、stable-diffusion-webui的参数，并支持管理参数。
 
 ## 特性
 
