@@ -2,6 +2,8 @@
 
 Web项目，用于生成NovelAI、stable-diffusion-webui的参数(Tag|元素)，并支持管理参数。
 
+![07614c75a4a0e9f915c09f26ab3f7941.gif](README.assets/07614c75a4a0e9f915c09f26ab3f7941-16760300496593.gif)
+
 ## 特性
 
 1. 项目可以完全靠前端支撑，但这样会无法对数据进行管理(CRUD)。
