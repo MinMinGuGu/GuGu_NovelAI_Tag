@@ -3,6 +3,8 @@ package com.gugu.controller;
 import com.gugu.domain.Result;
 import com.gugu.domain.entity.Attribute;
 import com.gugu.service.IAttributeService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,6 +25,7 @@ import java.util.List;
  * @author minmin
  * @since 2023 -02-09
  */
+@Api("操作元素相关接口")
 @RestController
 @RequestMapping("/gugu_novel_ai_tag/attribute")
 public class AttributeController {
@@ -37,6 +40,7 @@ public class AttributeController {
      * @return the result
      */
     @GetMapping
+    @ApiOperation("获取元素数据")
     public Result<?> get(String search) {
         return Result.fastSuccess(attributeService.searchList(search));
     }
@@ -48,6 +52,7 @@ public class AttributeController {
      * @return the result
      */
     @PostMapping
+    @ApiOperation("新增元素数据")
     public Result<?> post(@RequestBody Attribute attribute) {
         return Result.fastSuccess(attributeService.save(attribute));
     }
@@ -59,6 +64,7 @@ public class AttributeController {
      * @return the result
      */
     @DeleteMapping("/{id}")
+    @ApiOperation("根据元素id删除元素")
     public Result<?> delete(@PathVariable Integer id) {
         return Result.fastSuccess(attributeService.removeById(id));
     }
@@ -70,6 +76,7 @@ public class AttributeController {
      * @return the result
      */
     @DeleteMapping("/delete")
+    @ApiOperation("根据元素id集合批量删除元素")
     public Result<?> batchDelete(@RequestBody List<Integer> ids) {
         return Result.fastSuccess(attributeService.removeBatchByIds(ids));
     }
@@ -80,6 +87,7 @@ public class AttributeController {
      * @param httpServletResponse the http servlet response
      */
     @GetMapping("/export")
+    @ApiOperation("导出元素数据到表格中")
     public void export(HttpServletResponse httpServletResponse) {
         attributeService.export(httpServletResponse);
     }
@@ -90,6 +98,7 @@ public class AttributeController {
      * @return the result
      */
     @DeleteMapping("clean")
+    @ApiOperation("清理元素数据中name和value重复的数据")
     public Result<?> clean() {
         attributeService.cleanData();
         return Result.fastSuccess();
