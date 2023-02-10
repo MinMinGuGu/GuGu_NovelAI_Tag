@@ -83,7 +83,7 @@ export default class Home extends Component {
     }
 
     dataIdCount = 0;
-    addAttrProperty = (attr, category) => {
+    addAttrIdAndKeyProperty = (attr, category) => {
         if (!attr.id) {
             attr.id = this.dataIdCount.toString();
             attr.categoryName = category;
@@ -102,7 +102,7 @@ export default class Home extends Component {
         let dataList = [];
         if (allFlag) {
             for (const datum of data) {
-                let attrList = datum.attrList.map(item => this.addAttrProperty(item, datum.category));
+                let attrList = datum.attrList.map(item => this.addAttrIdAndKeyProperty(item, datum.category));
                 dataList = [...dataList, ...attrList,];
             }
             const {attrKeyMap} = this.state;
@@ -111,7 +111,7 @@ export default class Home extends Component {
             }
             return dataList;
         }
-        let attrList = data.map(item => this.addAttrProperty(item, category));
+        let attrList = data.map(item => this.addAttrIdAndKeyProperty(item, category));
         dataList = [...attrList];
         return dataList;
     }
@@ -123,13 +123,13 @@ export default class Home extends Component {
             let weight = item.weight;
             if (weight > 0) {
                 itemValue += '{'.repeat(weight) + item.value + '}'.repeat(weight) + ',';
-                return;
             }
             if (weight < 0) {
                 itemValue += '['.repeat(-weight) + item.value + ']'.repeat(-weight) + ',';
-                return;
             }
-            itemValue += item.value + ',';
+            if (weight === 0) {
+                itemValue += item.value + ',';
+            }
         });
         this.setState({inputSearchValue: itemValue});
     }
