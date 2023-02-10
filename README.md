@@ -36,9 +36,10 @@ Web项目，用于生成NovelAI的参数，并支持管理参数。
 
 > 环境依赖
 >
->> Java version 8及以上
+> > Java version 8及以上
+> >
+> > maven
 >
->> maven
 
 1. `gugu-novelai-tag-react`文件夹下运行`npm i&npm build`打包前端
 
