@@ -160,16 +160,7 @@ export default class Index extends Component {
                             onChange={this.tableTransferOnChange}
                             leftColumns={leftTableColumns}
                             rightColumns={rightTableColumns}
-                            filterOption={(inputValue, item) => {
-                                let itemProps = Object.keys(item);
-                                for (const itemProp of itemProps) {
-                                    if (item[itemProp].indexOf(inputValue) !== -1) {
-                                        return true;
-                                    }
-                                }
-                                return false;
-                            }
-                            }
+                            filterOption={(inputValue, item) => item.id.indexOf(inputValue) !== -1 || item.categoryName.indexOf(inputValue) !== -1 || item.name.indexOf(inputValue) !== -1 || item.value.indexOf(inputValue) !== -1}
                         />
                     </Col>
                 </Row>
