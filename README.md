@@ -27,7 +27,9 @@ Web项目，用于生成NovelAI的参数，并支持管理参数。
 
 ### 数据库管理
 
-默认情况下访问`http://127.0.0.1:8080/h2-console`，相关信息可以从`gugu-novelai-tag-admin/src/main/resources/application.yml`获取。
+默认情况下访问`http://127.0.0.1:8080/h2-console`
+
+相关信息可以从`gugu-novelai-tag-admin/src/main/resources/application.yml`获取。
 
 ### API接口文档
 
@@ -73,3 +75,8 @@ Web项目，用于生成NovelAI的参数，并支持管理参数。
         ├─config	配置文件
 ```
 
+## 项目相关技术栈
+
+前端：React、Ant Design
+
+后端：SpringBoot、Mybatis-plus
