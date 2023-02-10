@@ -16,9 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 /**
- * <p>
- * 前端控制器
- * </p>
+ * The type Category controller.
  *
  * @author minmin
  * @since 2023 -02-09
