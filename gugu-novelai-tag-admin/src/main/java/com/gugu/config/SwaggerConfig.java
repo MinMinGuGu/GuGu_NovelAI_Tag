@@ -33,7 +33,7 @@ public class SwaggerConfig {
                 .groupName("Attribute")
                 .apiInfo(getAttributeApiInfo())
                 .select()
-                .paths(PathSelectors.regex("/api/gugu_novel_ai_tag/attribute.*"))
+                .paths(PathSelectors.regex("/gugu_novel_ai_tag/attribute.*"))
                 .build();
     }
 
@@ -56,7 +56,7 @@ public class SwaggerConfig {
                 .groupName("Category")
                 .apiInfo(getCategoryApiInfo())
                 .select()
-                .paths(PathSelectors.regex("/api/gugu_novel_ai_tag/category.*"))
+                .paths(PathSelectors.regex("/gugu_novel_ai_tag/category.*"))
                 .build();
     }
 
@@ -79,7 +79,7 @@ public class SwaggerConfig {
                 .groupName("Config")
                 .apiInfo(getConfigApiInfo())
                 .select()
-                .paths(PathSelectors.regex("/api/gugu_novel_ai_tag/config.*"))
+                .paths(PathSelectors.regex("/gugu_novel_ai_tag/config.*"))
                 .build();
     }
 
@@ -100,9 +100,9 @@ public class SwaggerConfig {
     public Docket index() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .groupName("Index")
-                .apiInfo(getConfigApiInfo())
+                .apiInfo(getIndexApiInfo())
                 .select()
-                .paths(PathSelectors.regex("/api/gugu_novel_ai_tag/index.*"))
+                .paths(PathSelectors.regex("/gugu_novel_ai_tag/index.*"))
                 .build();
     }
 
