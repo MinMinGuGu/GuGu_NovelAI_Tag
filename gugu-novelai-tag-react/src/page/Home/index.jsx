@@ -31,7 +31,11 @@ export default class Home extends Component {
         }).catch(error => {
             console.error('请求后端加载数据失败');
             message.warning("无法从后端获取数据，将加载本地资源且无法使用管理功能。");
-            fetch('/data.json').then(response => {
+            let localPath = apis.localPath;
+            if (localPath.endsWith('/')) {
+                localPath = localPath.substring(0, localPath - 1);
+            }
+            fetch(localPath + '/data.json').then(response => {
                 if (!response.ok) {
                     message.error("无法加载本地资源");
                     return;
