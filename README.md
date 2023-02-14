@@ -13,6 +13,13 @@ Web项目，用于生成NovelAI、stable-diffusion-webui的参数(Tag|元素)，
 
 ## 启动项目
 
+### Docker
+
+1. 执行`docker run -it --name=gugu_novelai_tag -p 8080:8080 -d minminfromdocker/gugu_novelai_tag`启动
+2. 访问项目`http://127.0.0.1:8080`
+
+### 普通方式
+
 > 环境依赖
 >
 > > 必要
@@ -38,30 +45,6 @@ Web项目，用于生成NovelAI、stable-diffusion-webui的参数(Tag|元素)，
 ### API接口文档
 
 默认情况下访问`http://127.0.0.1:8080/swagger-ui.html`
-
-## 部署项目
-
-### 配合其他Web服务器
-
-1. `gugu-novelai-tag-react`文件夹下运行`npm i&npm build`打包前端
-
-2. 将打包好的前端`build`文件夹移动到Web服务器的映射目录中
-3. 如果已启动后端请修改相关配置将前端请求映射到后端去
-
-### 不需要其他Web服务器
-
-> 环境依赖
->
-> > Java version 8及以上
-> >
-> > maven
->
-
-1. `gugu-novelai-tag-react`文件夹下运行`npm i&npm build`打包前端
-
-2. 将打包好的前端`build`文件夹移动到`gugu-novelai-tag-admin/src/main/resources`下
-3. 在项目根目录执行`mvn clean package`命令
-4. 构建后生成`gugu-novelai-tag-admin/target/gugu-novelai-tag-admin-1.0.0.jar`运行该jar即可启动
 
 ## 主要目录结构
 
