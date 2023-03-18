@@ -5,6 +5,7 @@ Web项目，用于生成NovelAI、stable-diffusion-webui的参数(Tag|元素)，
 [在线体验(不支持参数管理)](https://www.gugumin.com/gugu-novelai-tag)
 
 ![07614c75a4a0e9f915c09f26ab3f7941.gif](https://img.mjj.today/2023/02/10/07614c75a4a0e9f915c09f26ab3f7941.gif)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FMinMinGuGu%2FGuGu_NovelAI_Tag.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FMinMinGuGu%2FGuGu_NovelAI_Tag?ref=badge_shield)
 
 ## 特性
 
@@ -67,3 +68,7 @@ Web项目，用于生成NovelAI、stable-diffusion-webui的参数(Tag|元素)，
 前端：React、Ant Design
 
 后端：SpringBoot、Mybatis-plus
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FMinMinGuGu%2FGuGu_NovelAI_Tag.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FMinMinGuGu%2FGuGu_NovelAI_Tag?ref=badge_large)
