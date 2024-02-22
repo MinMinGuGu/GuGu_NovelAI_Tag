@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/GuGu_NovelAI_Tag/static/css/main.c1422f37.css",
-    "main.js": "/GuGu_NovelAI_Tag/static/js/main.84d0915f.js",
+    "main.js": "/GuGu_NovelAI_Tag/static/js/main.fceac110.js",
     "index.html": "/GuGu_NovelAI_Tag/index.html",
     "main.c1422f37.css.map": "/GuGu_NovelAI_Tag/static/css/main.c1422f37.css.map",
-    "main.84d0915f.js.map": "/GuGu_NovelAI_Tag/static/js/main.84d0915f.js.map"
+    "main.fceac110.js.map": "/GuGu_NovelAI_Tag/static/js/main.fceac110.js.map"
   },
   "entrypoints": [
     "static/css/main.c1422f37.css",
-    "static/js/main.84d0915f.js"
+    "static/js/main.fceac110.js"
   ]
 }
