@@ -3,7 +3,7 @@
 
 Web项目，用于生成NovelAI、stable-diffusion-webui的参数(Tag|元素)，并支持参数管理。
 
-<s>[在线体验(不支持参数管理)](https://www.gugu.dev/GuGu_NovelAI_Tag), 因服务器到期服务失效</s>
+[在线体验(不支持参数管理)](http://blog.gugu.dev/GuGu_NovelAI_Tag/)
 
 ![07614c75a4a0e9f915c09f26ab3f7941.gif](https://img.mjj.today/2023/02/10/07614c75a4a0e9f915c09f26ab3f7941.gif)
 
